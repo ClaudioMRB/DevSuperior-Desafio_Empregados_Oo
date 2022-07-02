@@ -24,13 +24,11 @@ public class Program {
 		String email = scan.nextLine();
 		System.out.print("Telefone: ");
 		String phone = sc.next();
-		
+
 		Department dept = new Department(name, payday);
-	
+
 		Address address = new Address(email, phone);
-		
-		
-		
+
 		System.out.println(address.getEmail());
 		System.out.println();
 		System.out.print("Quantos funcionários tem o departamento? ");
@@ -48,7 +46,6 @@ public class Program {
 			Employee employee = new Employee(name1, salary);
 			dept.addItem(employee);
 		}
-		
 
 		showReport(dept);
 

@@ -5,24 +5,24 @@ import java.util.List;
 
 public class Department {
 
-	// private Address address;
+	//private Address address;
 	private String name;
 	private int payday;
-	String email;
-	String phone;
+	entities.Address email;
+	entities.Address phone;
 
 	List<Employee> employee = new ArrayList<>();
 
-	public Department() {
-
+	public Department(String name2, int payday2, entities.Address address) {
+		this.email = address;
+		this.phone = address;
 	}
 
 	public Department(String name, int payday, String email, String phone) {
 
 		this.name = name;
 		this.payday = payday;
-		this.email = email;
-		this.phone = phone;
+		
 	}
 
 	public Department(String name, int payday) {
@@ -32,13 +32,11 @@ public class Department {
 	}
 
 	public void Address(Address address) {
-		this.email = address.getEmail();
+		this.email = address;
 
 	}
 
-	public String getEmail() {
-		return email;
-	}
+	
 
 	public String getName() {
 
@@ -76,5 +74,11 @@ public class Department {
 	public List<Employee> getEmployee() {
 		return employee;
 	}
+
+	@Override
+	public String toString() {
+		return "Para dúvidas favor entrar em contato: " + email.getEmail();
+	}
+	
 
 }

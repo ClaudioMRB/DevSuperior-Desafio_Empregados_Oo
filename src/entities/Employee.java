@@ -2,8 +2,8 @@ package entities;
 
 public class Employee {
 
-	String name;
-	Double salary;
+	private String name;
+	private Double salary;
 
 	public Employee() {
 

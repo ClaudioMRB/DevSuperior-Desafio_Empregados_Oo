@@ -4,6 +4,8 @@ public class Address {
 
 	private String email;
 	private String phone;
+	
+	
 
 	public Address() {
 
@@ -22,5 +24,16 @@ public class Address {
 	public String getPhone() {
 		return phone;
 	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public void setPhone(String phone) {
+		this.phone = phone;
+	}
+	
+
+	
 
 }

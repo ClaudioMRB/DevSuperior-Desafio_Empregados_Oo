@@ -25,11 +25,10 @@ public class Program {
 		System.out.print("Telefone: ");
 		String phone = sc.next();
 
-		Department dept = new Department(name, payday);
-
+		// Department dept = new Department(name, payday);
+		Department dept = new Department(name, payday, email, phone);
 		Address address = new Address(email, phone);
 
-		System.out.println(address.getEmail());
 		System.out.println();
 		System.out.print("Quantos funcionários tem o departamento? ");
 		int n = sc.nextInt();
@@ -64,7 +63,7 @@ public class Program {
 			System.out.println(dept.getEmployee().get(i).getName());
 
 		}
-		System.out.println(address.getEmail());
+		System.out.println("Para dúvidas favor entrar em contato: " + dept.getEmail());
 
 	}
 

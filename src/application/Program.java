@@ -25,8 +25,8 @@ public class Program {
 		System.out.print("Telefone: ");
 		String phone = sc.next();
 
-		// Department dept = new Department(name, payday);
 		Department dept = new Department(name, payday, email, phone);
+
 		Address address = new Address(email, phone);
 
 		System.out.print("Quantos funcionários tem o departamento? ");

@@ -31,4 +31,9 @@ public class Address {
 		this.phone = phone;
 	}
 
+	@Override
+	public String toString() {
+		return "Address [email=" + email + "]";
+	}
+
 }

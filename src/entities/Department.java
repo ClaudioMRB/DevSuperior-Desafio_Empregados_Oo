@@ -5,12 +5,11 @@ import java.util.List;
 
 public class Department {
 
-	Employee emp = new Employee();
-	// Address address = new Address();
+	// private Address address;
 	private String name;
 	private int payday;
-	private String email;
-	private String phone;
+	String email;
+	String phone;
 
 	List<Employee> employee = new ArrayList<>();
 
@@ -32,14 +31,13 @@ public class Department {
 		this.payday = payday;
 	}
 
-	public String getEmail() {
+	public void Address(Address address) {
+		this.email = address.getEmail();
 
-		return email;
 	}
 
-	public String getPhone() {
-
-		return phone;
+	public String getEmail() {
+		return email;
 	}
 
 	public String getName() {

@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Department {
 
-	//private Address address;
+	// private Address address;
 	private String name;
 	private int payday;
 	entities.Address email;
@@ -13,30 +13,17 @@ public class Department {
 
 	List<Employee> employee = new ArrayList<>();
 
-	public Department(String name2, int payday2, entities.Address address) {
+	public Department(String name, int payday, entities.Address address) {
+		this.name = name;
+		this.payday = payday;
 		this.email = address;
 		this.phone = address;
-	}
-
-	public Department(String name, int payday, String email, String phone) {
-
-		this.name = name;
-		this.payday = payday;
-		
-	}
-
-	public Department(String name, int payday) {
-
-		this.name = name;
-		this.payday = payday;
 	}
 
 	public void Address(Address address) {
 		this.email = address;
 
 	}
-
-	
 
 	public String getName() {
 
@@ -79,6 +66,5 @@ public class Department {
 	public String toString() {
 		return "Para dúvidas favor entrar em contato: " + email.getEmail();
 	}
-	
 
 }

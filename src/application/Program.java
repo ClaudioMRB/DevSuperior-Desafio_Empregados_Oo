@@ -29,14 +29,12 @@ public class Program {
 		Department dept = new Department(name, payday, email, phone);
 		Address address = new Address(email, phone);
 
-		System.out.println();
 		System.out.print("Quantos funcionários tem o departamento? ");
 		int n = sc.nextInt();
 
 		for (int i = 0; i < n; i++) {
-			System.out.println();
-			System.out.println("Dados do funcionário " + (i + 1) + ":");
 
+			System.out.println("Dados do funcionário " + (i + 1) + ":");
 			System.out.print("Nome: ");
 			String name1 = scan.nextLine();
 			System.out.print("Salário: ");

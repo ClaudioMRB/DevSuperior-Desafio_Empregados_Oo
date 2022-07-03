@@ -6,29 +6,25 @@ import java.util.List;
 public class Department {
 
 	Employee emp = new Employee();
-	//Address address = new Address();
+	// Address address = new Address();
 	private String name;
 	private int payday;
 	private String email;
 	private String phone;
-	
+
 	List<Employee> employee = new ArrayList<>();
 
 	public Department() {
 
 	}
-	
-	
 
 	public Department(String name, int payday, String email, String phone) {
-	
+
 		this.name = name;
 		this.payday = payday;
 		this.email = email;
 		this.phone = phone;
 	}
-
-
 
 	public Department(String name, int payday) {
 
@@ -37,12 +33,12 @@ public class Department {
 	}
 
 	public String getEmail() {
-		
+
 		return email;
 	}
 
 	public String getPhone() {
-		
+
 		return phone;
 	}
 
@@ -82,6 +78,5 @@ public class Department {
 	public List<Employee> getEmployee() {
 		return employee;
 	}
-	
 
 }
